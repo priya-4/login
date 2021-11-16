@@ -1,13 +1,13 @@
 import { CONSTANT } from '../utils/Constant'
-
-const BASE_URL = 'dummy_api'
+// dummy_api call in BASE_URL
+const BASE_URL = '     '
 
 export const LoginDataApi= async (password,email) => {
     console.log("login data =>" ,password,email);
   
      
     
-    const Response = await fetch(BASE_URL + '/checklogin/', {
+    const Response = await fetch(BASE_URL, {
 
     method: 'GET',
     
