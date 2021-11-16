@@ -14,10 +14,7 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 - [ ] [Add files using the command line](https://gitlab.com/-/experiment/new_project_readme_content:194366408f7304b259c399925e406726?https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/shikhar.goel/dfccil-assest-management.git
-git branch -M main
-git push -uf origin main
+
 ```
 
 ## Integrate with your tools
