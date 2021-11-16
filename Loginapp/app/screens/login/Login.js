@@ -9,9 +9,7 @@ import {
 } from 'react-native';
 import { Styles } from './SSheet';
 import { LoginDataApi } from '../../apiCalling/LoginDataApi';
-import { loadLoginData } from '../../actions/LoginDataAction'
 import { icons } from '../../utils/Images';
-import { BorderlessButton } from 'react-native-gesture-handler';
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +30,6 @@ class Login extends Component {
         this.setState({
           isLoading: false
         })
-        this.props.navigation.navigate('splash');
       }
       else {
         this.setState({
@@ -46,11 +43,11 @@ class Login extends Component {
     return (
       <SafeAreaView >
         <View style={Styles.container}>
-          <View style={{ marginTop: 20, height: '10%', justifyContent: 'center' }}>
+          <View style={{ marginTop: 20, height: '10%', justifyContent: 'center',backgroundColor:'yellow',elevation:8 }}>
             <Text style={Styles.Textstyle}> LOGIN PAGE</Text>
           </View>
           {/* ========username textinput view=============== */}
-          <View style={{ height: 55, width: '85%', margin: '8%', borderWidth: 2, borderRadius: 15, borderColor: 'grey', marginTop: '5%', flexDirection: 'column', }}>
+          <View style={{ height: 55, width: '85%', margin: '8%', borderWidth: 2, borderRadius: 15, borderColor: 'grey', marginTop: '25%', flexDirection: 'column' }}>
             <View style={{ backgroundColor: 'white', marginLeft: 20, height: 15, bottom: 10, justifyContent: 'center', width: 65, alignContent: 'center' }}>
               <Text style={{ fontSize: 12, color: 'grey', alignSelf: 'center' }}>Username</Text>
             </View>
